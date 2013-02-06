@@ -1,0 +1,127 @@
+<sequence-diagram version="1.0.11" icons="true">  
+  <object id="1" language="java" name="com.alibaba.crm.test.AsyncTest" project="asynctest-1.0.0.0" 
+    file="/asynctest-1.0.0.0/src/java/com/alibaba/crm/test/AsyncTest.java" binary="false" label="&lt;static&gt;" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="2">      
+      <position height="877" width="0" x="0" y="78"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="org.springframework.context.support.ClassPathXmlApplicationContext" 
+    project="org.springframework.context" 
+    file="/org.springframework.context/src/main/java/org/springframework/context/support/ClassPathXmlApplicationContext.java" 
+    binary="false" label="classPathXmlApplicationContext" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="4">      
+      <position height="835" width="0" x="0" y="99"/>    
+    </execution>    
+    <execution id="7">      
+      <position height="772" width="0" x="0" y="141"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="699" width="0" x="0" y="193"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="626" width="0" x="0" y="245"/>    
+    </execution>  
+  </object>  
+  <object id="14" language="java" name="org.springframework.beans.factory.support.DefaultListableBeanFactory" 
+    project="org.springframework.beans" 
+    file="/org.springframework.beans/src/main/java/org/springframework/beans/factory/support/DefaultListableBeanFactory.java" 
+    binary="false" label="defaultListableBeanFactory" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="13">      
+      <position height="574" width="0" x="0" y="276"/>    
+    </execution>    
+    <execution id="16">      
+      <position height="511" width="0" x="0" y="318"/>    
+    </execution>    
+    <execution id="18">      
+      <position height="438" width="0" x="0" y="370"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="365" width="0" x="0" y="422"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="292" width="0" x="0" y="474"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="219" width="0" x="0" y="526"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="146" width="0" x="0" y="578"/>    
+    </execution>    
+    <execution id="28">      
+      <position height="73" width="0" x="0" y="630"/>    
+    </execution>  
+  </object>  
+  <object id="31" language="java" name="org.springframework.beans.factory.support.CglibSubclassingInstantiationStrategy" 
+    project="org.springframework.beans" 
+    file="/org.springframework.beans/src/main/java/org/springframework/beans/factory/support/CglibSubclassingInstantiationStrategy.java" 
+    binary="false" label="cglibSubclassingInstantiationStrategy" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="30">      
+      <position height="21" width="0" x="0" y="661"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="ClassPathXmlApplicationContext(java.lang.String[])">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" 
+    operation="ClassPathXmlApplicationContext(java.lang.String[],boolean,org.springframework.context.ApplicationContext)">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="8" operation="refresh():void">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" 
+    operation="invokeBeanFactoryPostProcessors(org.springframework.beans.factory.config.ConfigurableListableBeanFactory):void">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="getBeansOfType(java.lang.Class&lt;T&gt;,boolean,boolean):java.util.Map&lt;String,T&gt;">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="15" operation="getBean(java.lang.String,java.lang.Class&lt;T&gt;)">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="17" operation="doGetBean(java.lang.String,java.lang.Class&lt;T&gt;,java.lang.Object[],boolean)">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="19" 
+    operation="getSingleton(java.lang.String,org.springframework.beans.factory.ObjectFactory):java.lang.Object">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="21" 
+    operation="createBean(java.lang.String,org.springframework.beans.factory.support.RootBeanDefinition,java.lang.Object[]):java.lang.Object">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="23" 
+    operation="doCreateBean(java.lang.String,org.springframework.beans.factory.support.RootBeanDefinition,java.lang.Object[]):java.lang.Object">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" 
+    operation="createBeanInstance(java.lang.String,org.springframework.beans.factory.support.RootBeanDefinition,java.lang.Object[]):org.springframework.beans.BeanWrapper">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="27" 
+    operation="instantiateBean(java.lang.String,org.springframework.beans.factory.support.RootBeanDefinition):org.springframework.beans.BeanWrapper">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="28"/>  
+  </message>  
+  <message id="29" 
+    operation="instantiate(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.BeanFactory):java.lang.Object">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="30"/>  
+  </message>
+</sequence-diagram>

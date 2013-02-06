@@ -1,0 +1,3 @@
+http\://www.mycompany.com/schema/myns/myns.xsd=META-INF/services/myns.xsd
+http\://www.alibaba.com/schema/async/async.xsd=META-INF/services/async.xsd
+http\://www.alibaba.com/schema/parallel/parallel.xsd=META-INF/services/parallel.xsd

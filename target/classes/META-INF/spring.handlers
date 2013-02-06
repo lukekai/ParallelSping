@@ -1,0 +1,3 @@
+http\://www.mycompany.com/schema/myns=com.alibaba.crm.test.spring.MyNamespaceHandler
+http\://www.alibaba.com/schema/async=com.alibaba.crm.test.spring.xml.AsyncNamespaceHandler
+http\://www.alibaba.com/schema/parallel=com.alibaba.crm.test.spring.parallel.ToParallelNamespaceHandler
